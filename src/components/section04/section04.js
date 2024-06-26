@@ -3,15 +3,38 @@ import * as styles from './section04.module.css';
 
 const Section04 = () => {
   return (
-    <div className={styles.container}>
-        <h1 className={styles.title}>Section 04</h1>
-        <div className={styles.grid}>
-            <div className={`${styles.box} ${styles.box1}`}>Box 1</div>
-            <div className={`${styles.box} ${styles.box2}`}>Box 2</div>
-            <div className={`${styles.box} ${styles.box3}`}>Box 3</div>
-            <div className={`${styles.box} ${styles.box4}`}>Box 4</div>
-        </div>
-    </div>
+    <section id="section04" className={styles.section}>
+      <div className={styles.container}>
+          <div className={styles.grid}>
+            
+            <div className={`${styles.box} ${styles.text}`}>
+              <div className={styles.textRow1}>
+                Dining
+              </div>
+              <div className={styles.textRow2}>
+                季節の恵みを活かした<br />
+                自然を味わう
+              </div>
+              <div className={styles.textRow3}>
+              里山の恵みを感じていただけるよう、農家さんから直送している新鮮なお野菜と、日本海の新鮮な魚介、お肉など新潟の旬の味覚をお楽しみいただけるよう様々なプランをご用意しております。
+              </div>
+              <div className={styles.textRow4}>
+                <a href='/'>View more</a>
+              </div>
+            </div>
+            <div className={`${styles.box} ${styles.pictureRight}`}>
+              <img src="images/section04PictureRight.webp" alt="rightPicture" />
+            </div>
+            <div className={`${styles.box} ${styles.pictureLeft}`}>
+              <img src="images/section04PictureLeft.webp" alt="LeftPicture" />
+            </div>
+            <div className={`${styles.box} ${styles.pictureBottom}`}>
+              <img src="images/section04PictureBottom.webp" alt="BottomPicture" />
+            </div>
+            
+          </div>
+      </div>
+    </section>
   );
 };
 

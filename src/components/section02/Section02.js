@@ -6,7 +6,6 @@ const Section02 = () => {
   return (
     <section id="section02" className={styles.section}>
       <div className={styles.container}>
-        <h1 className={styles.sectionTitle}>Section 02</h1>
         <div className={styles.grid}>
           <div className={`${styles.box} ${styles.title}`}>
             <div className={styles.titleRowTop}>Concept</div>

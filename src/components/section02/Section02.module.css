@@ -1,11 +1,8 @@
 /* Section02.module.css */
-:root {
+.section {
   /* Section */
-  --_section-box-background-color: rgb(20, 20, 24);
-  --_section-box-border: 1px solid rgb(20, 20, 24);
   --_section-background-color: rgb(20, 20, 24);
-  --_section-text-color: white;
-  --_section-font-size: 32px;
+  background-color: var(--_section-background-color);
 
   /* Box */
   --_box-display: grid;
@@ -44,9 +41,7 @@
   --_text-row3-hover-color: gray;
 }
 
-.mobile {
-  display: none;
-}
+
 
 img {
   width: 100%;
@@ -54,9 +49,6 @@ img {
   object-fit: cover;
 }
 
-.section {
-  background-color: var(--_section-background-color);
-}
 
 .container {
   max-width: var(--container-max-width);
@@ -64,12 +56,6 @@ img {
   padding: var(--container-padding);
 }
 
-.sectionTitle {
-  font-family: var(--_font-family-mincho);
-  font-size: var(--_section-font-size);
-  color: var(--_section-text-color);
-  margin: 1rem 0;
-}
 
 .grid {
   display: grid;
@@ -85,7 +71,6 @@ img {
   justify-content: var(--_box-justify-content);
   align-items: var(--_box-align-items);
   font-weight: var(--_box-font-weight);
-  color: var(--_section-text-color);
 }
 
 .title {
@@ -107,11 +92,27 @@ img {
 }
 
 .pictureRight {
-  grid-column: 8 / 13;
-  grid-row: 2 / 10;
-  position: relative;
-  left: 20%;
-  top: 10%;
+  grid-column: 11 / 13;
+  grid-row: 3 / 12;
+}
+
+.pictureRight > img {
+  overflow: visible;
+}
+
+
+.pictureLeft {
+  grid-column: 1 / 2;
+  grid-row: 8 / 14;
+}
+
+.pictureLeft > img {
+  overflow: visible;
+}
+
+.pictureBottom {
+  grid-column: 6 / 10;
+  grid-row: 13 / 16;
 }
 
 .text {
@@ -143,17 +144,6 @@ img {
   color: var(--_text-row3-hover-color);
 }
 
-.pictureLeft {
-  grid-column: 1 / 4;
-  grid-row: 8 / 12;
-  position: relative;
-  right: 30%;
-}
-
-.pictureBottom {
-  grid-column: 6 / 10;
-  grid-row: 13 / 16;
-}
 
 @media screen and (max-width: 480px) {
   .container {
