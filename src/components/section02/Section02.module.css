@@ -15,8 +15,8 @@
   --_title-grid-template-columns: 1fr;
   --_title-height: 100%;
   --_title-font-family: var(--font-family-mincho);
-  --_title-row-top-font-size: 28px;
-  --_title-row-bottom-font-size: 48px;
+  --_title-row-top-font-size: 24px;
+  --_title-row-bottom-font-size: 38px;
   --_title-row-bottom-mobile-line-height: 1.8;
   --_title-row-top-mobile-font-size: 16px;
   --_title-row-bottom-mobile-font-size: 26px;
@@ -28,7 +28,7 @@
   --_text-grid-template-rows: 3fr 3fr 1fr;
   --_text-grid-template-columns: 1fr;
   --_text-font-family: var(--font-family-mincho);
-  --_text-font-size: 21px;
+  --_text-font-size: 18px;
   --_text-mobile-font-size: 14px;
   --_text-position: relative;
   --_text-line-height: 2.5;
@@ -81,6 +81,7 @@ img {
   height: var(--_title-height);
   font-family: var(--_title-font-family);
   text-align: var(--_title-text-align);
+  padding: 30px 30px;
 }
 
 .titleRowTop {
@@ -131,7 +132,7 @@ img {
 .textRow2,
 .textRow3 {
   height: auto;
-  padding: 20px 70px;
+  padding: 20px 100px;
 }
 
 .textRow3 > a {

@@ -35,7 +35,7 @@ const Section02 = () => {
           </div>
           <div className={`${styles.box} ${styles.pictureBottom}`}>
             <picture>
-              <source media="(max-width: 480px)" srcset="images/section02_mobile_Picuture.webp" />
+              <source media="(max-width: 480px)" srcset="images/section02_mobile_Picture.webp" />
               <img src="images/section02PictureBottom.webp" alt="bottomPicture" />
             </picture>
           </div>
