@@ -2,7 +2,7 @@ module.exports = {
     siteMetadata: {
         title: 'grid_practice02',
         description: "this project is designed as a exercise to help me accustomed to using grid for layout design.",
-        siteurl: "https://www.grid-practice02.com",
+        siteUrl: "https://www.grid-practice02.com",
         author: "chiba",
         lang: "ja",
     },
