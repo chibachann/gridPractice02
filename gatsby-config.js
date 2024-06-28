@@ -1,0 +1,11 @@
+module.exports = {
+    siteMetadata: {
+        title: 'grid_practice02',
+        description: "this project is designed as a exercise to help me accustomed to using grid for layout design.",
+        author: "chiba",
+        lang: "ja",
+    },
+    plugins: [
+        `gatsby-plugin-sitemap`,
+    ],
+}
