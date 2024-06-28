@@ -1,12 +1,10 @@
-/* Section07.module.css */
+/* Section02.module.css */
 
 /* Section */
 .section {
   background-color: var(--color-primary);
+  padding-bottom: 200px;
 
-  /* Height*/
-  --_grid-template-columns: repeat(12, 1fr);
-  --_grid-template-rows: repeat(15, 1fr);
   /* text */
   --_text-grid-template-rows: 3fr 3fr 1fr;
   --_text-grid-template-columns: 1fr;
@@ -26,7 +24,6 @@
   width: 100%;
   grid-template-columns: var(--grid-columns);
   grid-auto-rows: 100px;
-  background-color: black;
 }
 
 .title {
@@ -56,7 +53,7 @@
   display: grid;
   grid-template-columns: var(--_text-grid-template-columns);
   grid-template-rows: var(--_text-grid-template-rows);
-  row-gap: var(--_text-row-gap);
+
 }
 
 .textRow {

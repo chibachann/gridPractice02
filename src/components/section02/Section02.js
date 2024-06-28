@@ -4,7 +4,7 @@ import * as styles from './Section02.module.css';
 
 const Section02 = () => {
   return (
-    <section id="section07" className={styles.section}>
+    <section id="section02" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.title}>
           <div className={styles.titleTop}>Concept</div>

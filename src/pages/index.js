@@ -14,6 +14,7 @@ const IndexPage = () => {
 
         
         <Section02 />
+        <Section03 />
       </div>
     );
   };
