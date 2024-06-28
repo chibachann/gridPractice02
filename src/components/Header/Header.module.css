@@ -92,6 +92,7 @@
   border: none;
   color: var(--color-text);
   font-size: 24px;
+  font-family: var(--font-family-mincho);
 }
 
 

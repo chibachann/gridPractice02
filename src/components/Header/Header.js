@@ -17,7 +17,7 @@ const Header = () => {
                 </div>
                 <div className={`${styles.sideMenu} ${isOpen ? styles.open : ''}`}>
                     <div className={styles.close}>
-                          <button onClick={toggleMenu}>
+                        <button onClick={toggleMenu}>
                             ×Close
                         </button>
                     </div>
