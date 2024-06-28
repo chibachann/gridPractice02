@@ -92,3 +92,41 @@
 }
 
 
+@media screen and (max-width: 1080px) {
+  .title {
+    font-size: 8vw;
+  }
+  
+  .textTitle {
+    font-size: 6vw;
+  }
+
+  .noNewLine {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 50px 0 0 0;
+  }
+
+  .pictureLeft {
+    grid-column: 1 / 12;
+    grid-row: 3 / 8;
+  }
+
+  .text {
+    grid-column: 2 / 12;
+    grid-row: 8 / 13;
+    grid-template-rows: 5vh 1fr 2fr 1fr;
+  }
+
+  .textSubTitle{
+    font-size: 4vw;
+  }
+
+  .textRow {
+    font-size: 4vw;
+  }
+}

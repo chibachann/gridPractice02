@@ -63,11 +63,15 @@
   color: var(--color-text);
 }
 
-.textRow {
+.textRow,
+.texta{
   font-size: var(--_text-font-size);
   line-height: var(--_text-line-height);
-  text-align: var(--_text-text-align);
   grid-row: auto;
+}
+
+.texta {
+  text-align: center;
 }
 
 .textRow a {
@@ -103,4 +107,45 @@
 }
 
 
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 50px 0;
+  }
 
+  .title {
+    grid-column: 2 / 12;
+    grid-row: 1 / 2;
+    font-size: 10vw;
+  }
+
+  .subtitle {
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+    font-size: 6vw;
+  }
+
+  .text {
+    grid-column: 2 / 12;
+    grid-row: 3 / 7;
+    grid-template-rows: 3fr 1fr;
+    text-align: left;
+  }
+
+  .textRow, 
+  .texta {
+    font-size: 4vw;
+  }
+
+  .pictureLeft {
+    grid-column: 1 / 6;
+    grid-row: 7 / 10;
+  }
+
+  .pictureRight {
+    grid-column: 7 / 13;
+    grid-row: 8 / 11;
+  }
+
+ 
+  
+}

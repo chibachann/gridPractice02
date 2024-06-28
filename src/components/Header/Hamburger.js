@@ -6,7 +6,6 @@ const Hamburger = ({ isOpen, toggleMenu }) => {
     <button className={styles.burger} onClick={toggleMenu} aria-label="Toggle menu">
       <span className={styles.burgerSpan }></span>
       <span className={styles.burgerSpan }></span>
-      <span className={styles.burgerSpan }></span>
     </button>
   );
 };

@@ -82,4 +82,33 @@
   object-fit: contain;
 }
 
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 0;
+  }
+
+  .text {
+    grid-column: 2 / 12;
+    grid-row: 1 / 5;
+    grid-template-rows: 8vh 3fr 4fr 1fr;
+  }
+
+  .textSubTitle {
+    font-size: 4vw;
+  }
+
+  .textTitle {
+    font-size: 8vw;
+  }
+
+  .textRow {
+    font-size: 4vw;
+  }
+
+  .pictureRight {
+    grid-column: 4 / 13;
+    grid-row: 5 / 10;
+  }
+  
+}
 

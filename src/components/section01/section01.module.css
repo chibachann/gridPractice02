@@ -104,3 +104,18 @@
 .nav > ul > li > a:hover {
   color: var(--color-hover-text);
 }
+
+@media screen and (max-width: 1080px) {
+  .title {
+    font-size: 5vw;
+  }
+
+  .nav {
+    display: none;
+  }
+  
+  .logo {
+    grid-column: 2 / 4;
+    padding: 5vh 0 0 0;
+  }
+}

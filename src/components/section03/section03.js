@@ -16,7 +16,7 @@ const Section03 = () => {
           </div>
           <div className={styles.textTitle}>
             古きを新たに。<br />
-            匠の技で蘇る築120年<br />
+            匠の技で蘇る築120年<br className={styles.noNewLine}/>
             の古民家を体感する
           </div>
           <div className={styles.textRow}>

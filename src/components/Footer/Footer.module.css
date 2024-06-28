@@ -94,9 +94,9 @@
 .list {
     grid-column: 2 / 9;
     grid-row: 6 / 7;
-    display: flex;
-    gap: 30px;
-
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-flow: column;
     font-size: var(--_text-font-size);
     font-weight: var(--_text-font-weight);
     color: var(--color-text-sub);
@@ -109,4 +109,49 @@
 .list a:hover {
     text-decoration: var(--_text-a-text-decoration);
     text-underline-offset: var(--_text-a-text-underline-offset);
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 50px 0;
+    }
+
+    .title {
+        font-size: 4vw;
+    }
+
+    .menu  {
+        font-size: 3vw;
+        grid-auto-rows: 3vh;
+    }
+
+    .column01 {
+        grid-column: 2 / 12;
+        grid-row: 1 / 2;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .column02 {
+        grid-column: 2 / 6;
+        grid-row: 3 / 5;
+    }
+
+    .column03 {
+        grid-column: 7 / 12;
+        grid-row: 3 / 5;
+    }
+
+    .address {
+        font-size: 5vw;
+        line-height: 1.5;
+        
+    }
+    
+    .list {
+        
+        grid-column: 2 / 12;
+        grid-row: 6 / 7;
+        flex-direction: row;
+        font-size: 3vw;
+    }
 }
