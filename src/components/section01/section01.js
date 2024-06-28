@@ -12,6 +12,7 @@ const Section01 = () => {
           Experience Serene Escape<br />
           at MAHORA Nishinoya
         </div>
+  
 
       </div>
     </section>

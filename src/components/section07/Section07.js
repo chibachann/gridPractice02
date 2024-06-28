@@ -1,8 +1,8 @@
-// Section02.js
+// Section07.js
 import * as React from 'react';
-import * as styles from './Section02.module.css';
+import * as styles from './Section07.module.css';
 
-const Section02 = () => {
+const Section07 = () => {
   return (
     <section id="section07" className={styles.section}>
       <div className={styles.container}>
@@ -43,4 +43,4 @@ const Section02 = () => {
   );
 };
 
-export default Section02;
+export default Section07;
