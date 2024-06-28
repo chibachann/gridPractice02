@@ -82,6 +82,16 @@
   object-fit: contain;
 }
 
+@media screen and (min-width: 481px) and (max-width: 1080px) {
+  .textTitle {
+    font-size: 4vw;
+  }
+
+  .textRow {
+    font-size: 2vw;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .section {
     padding: 0;

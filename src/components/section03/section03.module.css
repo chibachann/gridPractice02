@@ -92,21 +92,45 @@
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 481px) and (max-width: 1080px) {
   .title {
-    font-size: 8vw;
+    font-size: 6vw;
   }
   
   .textTitle {
-    font-size: 6vw;
+    font-size: 4vw;
+  }
+
+  .textSubTitle {
+    font-size: 3vw;
   }
 
   .noNewLine {
     display: none;
   }
+
+  .text {
+    grid-template-rows: 1fr 2fr 3fr 1fr;
+  }
+
+  .textRow {
+    font-size: 2vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .title {
+    font-size: 8vw;
+  }
+  
+  .textTitle {
+    font-size: 5vw;
+  }
+
+  .noNewLine {
+    display: none;
+  }
+
   .section {
     padding: 50px 0 0 0;
   }

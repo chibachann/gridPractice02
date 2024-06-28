@@ -94,6 +94,14 @@
   font-family: var(--font-family-mincho);
 }
 
+@media screen and (min-width: 481px) and (max-width: 1080px){
+  .sideMenu {
+    width: 60%;
+    right: -60%;
+  }
+  
+}
+
 
 @media screen and (max-width: 480px) {
 

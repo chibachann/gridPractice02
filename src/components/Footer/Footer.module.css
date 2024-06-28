@@ -111,6 +111,21 @@
     text-underline-offset: var(--_text-a-text-underline-offset);
 }
 
+@media screen and (min-width: 481px) and (max-width: 1080px){
+    .address {
+        font-size: 2vw;
+    }
+
+    .menu  {
+        font-size: 2vw;
+        grid-auto-rows: 3vh;
+    }
+
+    .list {
+        font-size: 2vw;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .footer {
         padding: 50px 0;

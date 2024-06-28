@@ -100,9 +100,18 @@
 
 
 @media screen and (min-width: 481px) and (max-width: 1080px) {
+  .title {
+    grid-column: 3 / 10;
+    grid-row: 2 / 5;
+  }
+
   .titleBottom {
     font-size: 5vw;
   }
+
+  .textRow {
+    font-size: 2vw;
+  } 
 
 }
 

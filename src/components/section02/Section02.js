@@ -28,10 +28,16 @@ const Section02 = () => {
             </div>
           </div>
         <div className={styles.pictureRight}>
-          <img src="images/section02PictureRight.webp" alt="rightPicture" />
+          <picture>
+            <source media="(max-width: 480px)" srcset="" />
+            <img src="images/section02PictureRight.webp" alt="rightPicture" />
+          </picture>
         </div>
         <div className={styles.pictureLeft}>
-          <img src="images/section02PictureLeft.webp" alt="leftPicture" />
+          <picture>
+            <source media="(max-width: 480px)" srcset="" />
+            <img src="images/section02PictureLeft.webp" alt="leftPicture" />
+          </picture>
         </div>
         <div className={styles.pictureBottom}>
           <picture>
