@@ -1,8 +1,19 @@
+/* Section04.module.css */
+
+/* Section */
 .section {
-  /* Section */
-  --_section-background-color: #111;
-  background-color: var(--_section-background-color);
+  background-color: var(--color-secondary);
   padding-bottom: 200px;
+
+  /* Grid Layout Variables */
+  --grid-picture-right-column: 11 / 13;
+  --grid-picture-right-row: 1 / 9;
+  --grid-picture-left-column: 1 / 2;
+  --grid-picture-left-row: 10 / 15;
+  --grid-picture-bottom-column: 6 / 12;
+  --grid-picture-bottom-row: 11 / 16;
+  --grid-text-column: 1 / 6;
+  --grid-text-row: 1 / 8;
 
   /* Box */
   --_box-display: grid;
@@ -19,12 +30,12 @@
   --_title-row-top-mobile-font-size: 16px;
   --_title-row-bottom-mobile-font-size: 26px;
   --_title-text-align: center;
-
+  
   /* text */
   --_text-grid-template-rows: 1fr 3fr 3fr 1fr;
   --_text-grid-template-columns: 1fr;
   --_text-font-family: var(--font-family-mincho);
-  --_text-font-size: 18px;
+  --_text-font-size: 21px;
   --_text-mobile-font-size: 14px;
   --_text-position: relative;
   --_text-line-height: 2.5;
@@ -34,108 +45,100 @@
   --_text-row4-text-decoration: solid underline;
   --_text-row4-text-underline-offset: 8px;
   --_text-row4-cursor: pointer;
-  --_text-row4-hover-color: gray;
 }
 
+/* Grid Layout */
 .container {
-    max-width: var(--container-max-width);
-    margin: 0 auto;
-    padding: var(--container-padding);
-  }
-  
-  .title {
-    font-family: var(--font-family-mincho);
-    margin:  1rem 0;
-  }
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
 
-  .grid {
-    display: grid;
-    grid-template-columns: var(--grid-columns);
-    grid-gap: var(--grid-gap);
-    grid-auto-rows: var(--grid-auto-rows);
-  }
+.grid {
+  display: grid;
+  grid-template-columns: var(--grid-columns);
+  grid-gap: var(--grid-gap);
+  grid-auto-rows: var(--grid-auto-rows);
+}
 
-  .box {
-    display: var(--_box-display);
-    justify-content: var(--_box-justify-content);
-    align-items: var(--_box-align-items);
-    font-weight: var(--_box-font-weight);
-  }
-  
+.pictureRight {
+  grid-column: var(--grid-picture-right-column);
+  grid-row: var(--grid-picture-right-row);
+}
 
-  
-  .pictureRight {
-    grid-column: 11 / 13;
-    grid-row: 1 / 9;
-  }
+.pictureLeft {
+  grid-column: var(--grid-picture-left-column);
+  grid-row: var(--grid-picture-left-row);
+}
 
-  .pictureRight > img {
-    overflow: visible;
-  }
+.pictureBottom {
+  grid-column: var(--grid-picture-bottom-column);
+  grid-row: var(--grid-picture-bottom-row);
+}
 
-  .pictureLeft {
-    grid-column: 1 / 2;
-    grid-row: 10 / 15;
-  }
+.text {
+  grid-column: var(--grid-text-column);
+  grid-row: var(--grid-text-row);
+}
 
-  .pictureLeft > img {
-    overflow: visible;
-  }
+.title {
+  font-family: var(--font-family-mincho);
+  margin: 1rem 0;
+}
 
-  .pictureBottom {
-    grid-column: 6 / 12;
-    grid-row: 11 / 16;
-  }
+.box {
+  display: var(--_box-display);
+  justify-content: var(--_box-justify-content);
+  align-items: var(--_box-align-items);
+  font-weight: var(--_box-font-weight);
+}
 
-  .pictureBottom > img {
-    overflow: visible;
-  }
+.pictureRight > img,
+.pictureLeft > img,
+.pictureBottom > img {
+  overflow: visible;
+}
 
-  
-  .text {
-    grid-column: 1 / 6;
-    grid-row: 1 / 8;
-    grid-template-rows: auto;
-    grid-template-columns: var(--_text-grid-template-columns);
-    font-family: var(--_text-font-family);
-    position: var(--_text-position);
-    text-align: var(--_text-text-align);
-  }
+.text {
+  grid-template-rows: auto;
+  grid-template-columns: var(--_text-grid-template-columns);
+  font-family: var(--_text-font-family);
+  position: var(--_text-position);
+  text-align: var(--_text-text-align);
+}
 
-  .textRow1,
-  .textRow2,
-  .textRow3,
-  .textRow4{
-    height: auto;
-    padding: 10px 0;
-  }
+.textRow1,
+.textRow2,
+.textRow3,
+.textRow4 {
+  height: auto;
+  padding: 10px 0;
+}
 
-  .textRow1 {
-    padding: 30px 0;
-    font-size: 24px;
-  }
+.textRow1 {
+  padding: 30px 0;
+  font-size: 24px;
+}
 
-  .textRow2 {
-    font-size: 44px;
-    line-height: 1.8;
-  }
+.textRow2 {
+  font-size: 44px;
+  line-height: 1.8;
+}
 
-  .textRow3 {
-    padding-top: 50px;
-    font-size: var(--_text-font-size);
-    line-height: var(--_text-line-height);
-  }
+.textRow3 {
+  padding-top: 50px;
+  font-size: var(--_text-font-size);
+  line-height: var(--_text-line-height);
+}
 
-  .textRow4 > a {
-    font-size: var(--_text-font-size);
-    line-height: var(--_text-line-height);
-    text-decoration: var(--_text-row4-text-decoration);
-    text-underline-offset: var(--_text-row4-text-underline-offset);
-    cursor: var(--_text-row4-cursor);
-  }
-  
-  .textRow4 > a:hover {
-    color: var(--_text-row4-hover-color);
-  }
+.textRow4 > a {
+  font-size: var(--_text-font-size);
+  line-height: var(--_text-line-height);
+  text-decoration: var(--_text-row4-text-decoration);
+  text-underline-offset: var(--_text-row4-text-underline-offset);
+  cursor: var(--_text-row4-cursor);
+}
 
-
+.textRow4 > a:hover {
+  color: var(--color-hover-text);
+}

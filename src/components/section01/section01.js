@@ -3,21 +3,18 @@ import * as styles from './section01.module.css';
 
 const Section01 = () => {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Section 01</h1>
-      <div className={styles.grid}>
-        <div className={`${styles.box} ${styles.col3}`}>3 cols</div>
-        <div className={`${styles.box} ${styles.col3}`}>3 cols</div>
-        <div className={`${styles.box} ${styles.col3}`}>3 cols</div>
-        <div className={`${styles.box} ${styles.col3}`}>3 cols</div>
-        <div className={`${styles.box} ${styles.col4}`}>4 cols</div>
-        <div className={`${styles.box} ${styles.col4}`}>4 cols</div>
-        <div className={`${styles.box} ${styles.col4}`}>4 cols</div>
-        <div className={`${styles.box} ${styles.col6}`}>6 cols</div>
-        <div className={`${styles.box} ${styles.col6}`}>6 cols</div>
-        <div className={`${styles.box} ${styles.col12}`}>12 cols</div>
+    <section id="section01" className={styles.section}>
+      <div className={styles.container}>
+        <div className={styles.image}>
+          <img src="images/top.jpg" alt="Top" />
+        </div>
+        <div className={styles.title}>
+          Experience Serene Escape<br />
+          at MAHORA Nishinoya
+        </div>
+
       </div>
-    </div>
+    </section>
   );
 };
 
