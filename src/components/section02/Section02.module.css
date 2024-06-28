@@ -13,7 +13,7 @@
   --_grid-picture-left-row: 8 / 14;
   --_grid-picture-bottom-column: 6 / 10;
   --_grid-picture-bottom-row: 14 / 17;
-  --_grid-text-column: 3 / 9;
+  --_grid-text-column: 3 / 8;
   --_grid-text-row: 5 / auto;
 
   /* Box */
@@ -136,7 +136,7 @@
 .textRow2,
 .textRow3 {
   height: auto;
-  padding: 20px 90px;
+  padding: 20px 10px;
 }
 
 .textRow3>a {
