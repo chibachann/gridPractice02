@@ -3,6 +3,7 @@ import * as React from 'react';
 import * as styles from './Section02.module.css';
 
 const Section02 = () => {
+
   return (
     <section id="section02" className={styles.section}>
       <div className={styles.container}>
@@ -44,3 +45,5 @@ const Section02 = () => {
 };
 
 export default Section02;
+
+
