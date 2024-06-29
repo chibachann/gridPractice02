@@ -9,13 +9,7 @@
   --_text-grid-template-rows: 3fr 3fr 1fr;
   --_text-grid-template-columns: 1fr;
   --_text-row-gap: 10px;
-  --_text-font-family: var(--font-family-mincho);
-  --_text-font-size: 21px;
-  --_text-line-height: 2.5;
   --_text-text-align: left;
-  --_text-a-text-decoration: solid underline;
-  --_text-a-text-underline-offset: 8px;
-  --_text-a-cursor: pointer;
 }
 
 /* Grid Layout */
@@ -32,7 +26,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr;
-  font-family: var(--font-family-mincho);
   text-align: left;
 }
 
@@ -58,16 +51,16 @@
 
 .textRow {
   font-family: var(--_text-font-family);
-  font-size: var(--_text-font-size);
-  line-height: var(--_text-line-height);
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
   text-align: var(--_text-text-align);
   grid-row: auto;
 }
 
 .textRow a {
-  text-decoration: var(--_text-a-text-decoration);
-  text-underline-offset: var(--_text-a-text-underline-offset);
-  cursor: var(--_text-a-cursor);
+  text-decoration: var(--link-text-decoration);
+  text-underline-offset: var(--link-text-underline-offset);
+  cursor: var(--link-cursor);
 }
 
 .textRow a:hover {
@@ -110,7 +103,7 @@
   }
 
   .textRow {
-    font-size: 2vw;
+    font-size: var(--text-font-size-tablet);
   } 
 
 }
@@ -144,7 +137,7 @@
   }
 
   .textRow {
-    font-size: 4vw;
+    font-size: var(--text-font-size-mobile);
   }
 
   .pictureBottom {

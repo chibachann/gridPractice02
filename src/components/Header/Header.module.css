@@ -10,16 +10,9 @@
 
 
   /* text */
-  --_text-grid-template-rows: 5fr 1fr;
-  --_text-grid-template-columns: 1fr;
-  --_text-font-family: var(--font-family-mincho);
   --_text-font-size: 18px;
   --_text-font-weight: 300;
   --_text-line-height: 2;
-  --_text-text-align: left;
-  --_text-a-text-decoration: solid underline;
-  --_text-a-text-underline-offset: 8px;
-  --_text-a-cursor: pointer;
 }
 
 /* Grid Layout */

@@ -1,4 +1,4 @@
-/* Section03.module.css */
+/* Section05.module.css */
 
 /* Section */
 .section {
@@ -7,7 +7,6 @@
 
   /* Title */
   --_title-height: 100%;
-  --_title-font-family: var(--font-family-mincho);
   --_title-font-size: 60px;
   --_title-font-weight: 400;
   --_title-row-bottom-mobile-line-height: 1.8;
@@ -20,13 +19,7 @@
   --_text-grid-template-columns: 1fr;
   --_text-sub-title-font-size: 24px;
   --_text-title-font-size: 44px;
-  --_text-font-family: var(--font-family-mincho);
-  --_text-font-size: 21px;
-  --_text-line-height: 2.2;
   --_text-text-align: left;
-  --_text-a-text-decoration: solid underline;
-  --_text-a-text-underline-offset: 8px;
-  --_text-a-cursor: pointer;
 }
 
 /* Grid Layout */
@@ -43,7 +36,6 @@
   display: grid;
   grid-template-columns: var(--_text-grid-template-columns);
   grid-template-rows: var(--_text-grid-template-rows);
-  font-family: var(--_text-font-family);
   color: var(--color-text);
 }
 
@@ -56,16 +48,16 @@
 }
 
 .textRow {
-  font-size: var(--_text-font-size);
-  line-height: var(--_text-line-height);
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
   text-align: var(--_text-text-align);
   grid-row: auto;
 }
 
 .textRow a {
-  text-decoration: var(--_text-a-text-decoration);
-  text-underline-offset: var(--_text-a-text-underline-offset);
-  cursor: var(--_text-a-cursor);
+  text-decoration: var(--link-text-decoration);
+  text-underline-offset: var(--link-text-underline-offset);
+  cursor: var(--link-cursor);
 }
 
 .textRow a:hover {
@@ -88,7 +80,7 @@
   }
 
   .textRow {
-    font-size: 2vw;
+    font-size: var(--text-font-size-tablet);
   }
 }
 
@@ -112,7 +104,7 @@
   }
 
   .textRow {
-    font-size: 4vw;
+    font-size: var(--text-font-size-mobile);
   }
 
   .pictureRight {

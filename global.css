@@ -35,12 +35,24 @@
     --color-hover-text: gray;
     --color-box: #7a4171;
 
+    /* font-size */
+    --text-font-size: 21px;
+    --text-font-size-mobile: 4vw;
+    --text-font-size-tablet: 2vw;
+
+    --text-line-height: 2.2;
+
+    --link-text-decoration: solid underline;
+    --link-text-underline-offset: 8px;
+    --link-cursor: pointer;
+
 }
 
 
 body {
     background-color: var(--color-primary);
     color: var(--color-text);
+    font-family: var(--font-family-mincho);
     margin: 0;
     padding: 0;
 }
