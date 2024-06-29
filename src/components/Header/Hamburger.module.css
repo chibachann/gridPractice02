@@ -29,19 +29,19 @@
 }
 
 .burgerSpan:nth-of-type(1) {
-  top: 0px;
+  top: 25%;
   transform-origin: left center;
 }
 
 .burgerSpan:nth-of-type(2) {
-  top: 50%;
+  top: 75%;
   transform: translateY(-50%);
   transform-origin: left center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1080px) {
   .burger {
     width: 30px;
-    height: 22px;
-  }  
+    height: 20px;
+  }
 }

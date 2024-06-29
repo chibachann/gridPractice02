@@ -12,6 +12,20 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
+                <div className={styles.logo}>
+                    <img src="/images/logo.svg" alt="Logo" />
+                </div>
+                <div className={styles.nav}>
+                    
+                    <a href="/">About</a>
+                    <a href="/">Room</a>
+                    <a href="/">Dining</a>
+                    <a href="/">Experience</a>
+                    <a href="/">Creative Space</a>
+                    <a href="/">News</a>
+                    <a href="/">Access</a>
+                    
+                </div>
                 <div className={styles.toggleMenu}>
                     <Hamburger isOpen={isOpen} toggleMenu={toggleMenu} />
                 </div>
